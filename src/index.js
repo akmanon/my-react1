@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Title } from "./Title";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.css';
 import "./index.css";
+import { Title } from "./Title";
 import { Clock } from './clock';
 
 
 ReactDOM.render(
-  <div>
-    <Title className="title" />
-    <Clock />
+  <div className="container">
+    <div className="row justify-content-center">
+      <div className="col col-md-5 text-center card card1">
+        <Title className="title" />
+        <Clock />
+      </div>
+    </div>
   </div>,
   document.getElementById('root')
 )
